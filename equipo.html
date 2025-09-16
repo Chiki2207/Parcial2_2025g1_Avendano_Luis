@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Equipo - CoderHub.run</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top coder-navbar">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="logo-container mr-3">
+                    <i class="bi bi-code-slash"></i>
+                </div>
+                <div class="d-flex flex-column">
+                    <span class="fw-bold brand-name">CoderHub.run</span>
+                    <small class="brand-subtitle">Desarrollo Web</small>
+                </div>
+            </a>
+
+            <!-- Ubicacion -->
+            <div class="location-text d-none d-lg-block">
+                <span class="text-white"><i class="bi bi-geo-alt mr-1"></i>Florencia, Colombia</span>
+            </div>
+
+            <!-- Menu mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barraNavegacion"
+                aria-controls="barraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="barraNavegacion">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-door mr-1"></i>Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#sobre-mi">
+                            <i class="bi bi-people mr-1"></i>Quiénes Somos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="equipo.html">
+                            <i class="bi bi-person-badge mr-1"></i>Equipo
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">
+                            <i class="bi bi-gear mr-1"></i>Servicios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#proyectos">
+                            <i class="bi bi-folder mr-1"></i>Portafolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contacto">
+                            <i class="bi bi-envelope mr-1"></i>Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Seccion de los desarrolladores-->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row justify-content-center align-items-center min-vh-100">
+                    <div class="col-lg-10 text-center">
+                        <h1 class="display-3 font-weight-bold text-white mb-3">
+                            <i class="bi bi-people-fill mr-3"></i>Nuestro Equipo
+                        </h1>
+                        <p class="lead text-white mb-4">
+                            Conoce a los desarrolladores que hacen posible CoderHub.run
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrusel de Fotos del Equipo -->
+        <section class="team-photos-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div id="carruselEquipo" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carruselEquipo" data-slide-to="0" class="active"></li>
+                            <li data-target="#carruselEquipo" data-slide-to="1"></li>
+                            <li data-target="#carruselEquipo" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/imagen_luis.jpg" class="d-block w-100 team-photo"
+                                    alt="Luis trabajando en proyecto">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Luis trabajando en proyecto</h5>
+                                    <p>Desarrollando soluciones para empresas locales</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="img/elon.jpg" class="d-block w-100 team-photo" alt="elon Musk">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>elon Musk</h5>
+                                    <p>Trabajando en la base de datos del proyecto</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="img/mark.jpg" class="d-block w-100 team-photo" alt="Mark Zuckerberg">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Mark Zuckerberg</h5>
+                                    <p>Creando interfaces atractivas para nuestros clientes</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#carruselEquipo" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carruselEquipo" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion Miembros del Equipo -->
+        <section class="team-members-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="display-5 font-weight-bold text-white mb-3">
+                            <i class="bi bi-person-badge-fill mr-3"></i>Miembros del Equipo
+                        </h2>
+                        <p class="lead text-white">Los talentos detrás de cada proyecto</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Miembro 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card team-member-card h-100">
+                            <div class="card-body text-center">
+                                <div class="member-avatar mb-3">
+                                    <img src="img/Luis_Frontal.jpeg" alt="Luis Enrique Avendaño" class="rounded-circle"
+                                        style="width: 120px; height: 120px; object-fit: cover; object-position: center;">
+                                </div>
+                                <h5 class="card-title">Luis Enrique Avendaño</h5>
+                                <p class="text-primary mb-2">Fundador & Desarrollador Full Stack</p>
+                                <p class="card-text">Estudiante de Ingeniería de Sistemas que tuvo la idea de crear
+                                    CoderHub.run. Se encarga de coordinar los proyectos y aprender nuevas tecnologías.
+                                </p>
+                                <div class="member-skills">
+                                    <span class="skill-tag">HTML/CSS</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">Bootstrap</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Miembro 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card team-member-card h-100">
+                            <div class="card-body text-center">
+                                <div class="member-avatar mb-3">
+                                    <img src="img/Elon-Musk_frontal.jpg" alt="Elon Musk" class="rounded-circle"
+                                        style="width: 120px; height: 120px; object-fit: cover; object-position: center;">
+                                </div>
+                                <h5 class="card-title">Elon Musk</h5>
+                                <p class="text-primary mb-2">Desarrollador Backend & Mentor</p>
+                                <p class="card-text">Estudiante de último semestre que nos ayuda con la parte técnica
+                                    más compleja. Especialista en PHP y bases de datos MySQL.</p>
+                                <div class="member-skills">
+                                    <span class="skill-tag">PHP</span>
+                                    <span class="skill-tag">MySQL</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Miembro 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card team-member-card h-100">
+                            <div class="card-body text-center">
+                                <div class="member-avatar mb-3">
+                                    <img src="img/mark_frontal..jpg" alt="Mark Zuckerberg" class="rounded-circle"
+                                        style="width: 120px; height: 120px; object-fit: cover; object-position: center;">
+                                </div>
+                                <h5 class="card-title">Mark Zuckerberg</h5>
+                                <p class="text-primary mb-2">Diseñador Frontend</p>
+                                <p class="card-text">Compañero de clase que se encarga de que todo se vea bonito y sea
+                                    fácil de usar. Le gusta mucho el diseño y siempre tiene ideas creativas y es
+                                    millonario xd.</p>
+                                <div class="member-skills">
+                                    <span class="skill-tag">CSS</span>
+                                    <span class="skill-tag">Bootstrap</span>
+                                    <span class="skill-tag">Photoshop</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer-section py-5">
+        <div class="container text-center">
+            <span class="footer-brand gradient-text-animado animate__animated animate__pulse animate__infinite">
+                <i class="bi bi-code-slash"></i>
+                <span class="footer-nombre">CoderHub.run</span>
+            </span>
+            <p class="mt-3 text-white-50">© 2025 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+    <!--inicializar el carrusel -->
+    <script>
+        $(document).ready(function () {
+            $('#carruselEquipo').carousel({
+                interval: 3000,
+                wrap: true,
+                pause: false
+            });
+
+            $('#carruselEquipo').carousel('cycle');
+        });
+    </script>
+</body>
+
+</html>
